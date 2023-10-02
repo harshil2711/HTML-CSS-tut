@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet"> 
+        <style>
+            #box{
+                height: 200px;
+                width: 200px;
+                background-color: rebeccapurple;
+                transition-property: background-property;
+                transition-property: all; /* If all property need transition */
+                transition-duration: 1s;
+            }
+            #box:hover{
+                background-color: aquamarine;
+                height: 400px;
+                width: 400px;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="box">
+                This my box
+            </div>
+        </div>
+    </body>
+</html>

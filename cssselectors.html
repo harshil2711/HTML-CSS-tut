@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            div p{                 /*  It will apply css on all the P tag inside div */
+                text-align: justify;
+                background-color: aqua;
+                color: rebeccapurple;
+            }
+            div > p{               /* It will apply css which has direct child of P inside dive */
+                background-color: white;
+                border: solid black thin ;
+            }
+            div + p{              /* If p is direct sibling of div */
+                background-color: rgb(225, 225, 43);
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <p>Thi is paragraph 1</p>
+        <div class="container2">
+            <li><p>This is paragraph 2</p></li>
+        </div>
+    </div>
+    <p>This para 3</p>
+    </body>
+</html>

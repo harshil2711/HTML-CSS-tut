@@ -1,0 +1,41 @@
+<!-- visibility: hidden;   : it hides the element but space is there -->
+<!-- display: none;   : It hides the element and space both. -->
+<!-- Z-index : It will not work on position static. -->
+<!-- z-index : Which element has more z-index Which ovelaps the other element -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .box{
+                border: 2px solid red;
+                height: 170px;
+                width: 170px;
+
+            }
+            #box1{
+                background-color:#FFB6C1 ;
+                position: relative;
+                top: 20px;
+                z-index: 50;
+            }
+            #box2{
+                background-color:greenyellow ;
+                top: 14px;
+                position: relative;
+                z-index: 45;
+            }
+            #box3{
+                background-color:khaki ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </body>
+</html>

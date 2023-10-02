@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            input[type='email']{
+                border: 2px solid red; 
+                width: 30%;
+            }
+            .container{
+                display: block;
+                width: 430px;
+                margin: auto;
+            }
+            a[target='_blank']{
+                color: blueviolet;
+                border: 1px solid #000;
+            }
+            li:nth-child(4){
+                color: blue;
+            }
+            li:nth-child(even){
+                background-color:#f5f5dc ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <a href="http://google.com" target="_blank">Go to google</a>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Email:</label><br>
+            <input type="email" id="lname" name="lname">
+          </form>
+          <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+            <li>item8</li>
+          </ul>
+        </div>
+    </body>
+</html>

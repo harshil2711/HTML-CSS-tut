@@ -1,0 +1,61 @@
+<!-- 
+    ___________________Property for containers_____________________
+    disply : flex - To define flexbox 
+    flex-direction : row / clumn / row-reverse
+    flex-wrap : wrap / flex-reverse
+    flex-flow : row-reverse wrap (To use flex direction and wrap together)
+    justify-content: center; (To center the elements)
+    justify-content: space-between; (To give equal space between all the element)
+    align-items: center / flex-end / flex-start; (Center the the elements)
+    ___________________Property for items___________________________
+    order : To arrange the box in order
+    flex-grow : To increase the length of the box
+    flex-shrink : It will shrink the particular item
+    flex-basis : When flex-direction is set to row then flex-basis will control width. 
+    flex-basis : When flex-direction is set to column then flex-basis will control height.
+    align-self : flex-start, flex-end, flex-center
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding: 3px;
+            background-color: tomato;
+            border: 1px solid #000;
+            
+        }   
+        #item1{
+            order: 3;
+        }
+        #item2{
+            flex-grow: 4;
+            flex-basis: 400px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item" id="item1">item 1</div>
+            <div class="item" id="item2">item 2</div>
+            <div class="item" id="item3">item 3</div>
+            <div class="item" id="item4">item 4</div>
+            <div class="item" id="item5">item 5</div>
+            <div class="item" id="item6">item 6</div>
+        </div>
+    </body>
+</html>

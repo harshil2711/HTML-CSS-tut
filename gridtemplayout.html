@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .container{
+                display: grid;
+                gap: 0.5rem;
+                grid-template-areas:
+                'navbar navbar navbar' 
+                'section section aside'
+                'footer footer footer';
+            }
+           
+            #navbar{
+                grid-area: navbar;
+            }
+            #section{
+                grid-area: section;
+            }
+            #aside{
+                grid-area: aside;
+
+            }
+            #footer{
+                grid-area: footer;
+            }
+            .item{
+                background-color: yellow;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <nav id="navbar" class="item">
+            home
+            about us
+            services
+            contact us
+        </nav>
+        <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quidem enim qui, perspiciatis veritatis quae ea totam magnam non id, dolorem tempora, corporis atque? Sunt officiis ex quis laudantium? Quidem?2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, maiores debitis mollitia ipsa illo in sapiente nesciunt enim facere! Exercitationem nam suscipit fugit? Molestiae temporibus accusamus nostrum veniam officiis, commodi rem quia quas deserunt quam accusantium quaerat atque amet magnam error, optio alias culpa quod, distinctio ut iure? Earum facere eius vero quas unde nulla neque soluta ipsam laboriosam! Atque laudantium a harum repellendus provident id voluptatem ullam repellat nam consequatur veniam autem itaque, similique asperiores aliquam culpa illum aut, nemo consequuntur reiciendis mollitia! Doloribus unde, quaerat nisi possimus a architecto eveniet? Consectetur et eveniet adipisci delectus doloremque distinctio neque itaque vero, quod minus ea qui fuga aperiam, eius minima iusto eligendi! Facere laboriosam esse eligendi culpa atque obcaecati debitis dignissimos natus!</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa pariatur saepe.</div>
+        <div id="footer" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tenetur minima alias?</div>
+    </div>
+    </body>
+</html>

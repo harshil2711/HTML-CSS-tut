@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+            gap: 1rem;
+        }
+
+        .item {
+            background-color: aqua;
+            border: 2px solid rebeccapurple;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+               
+            .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+                gap: 1rem;
+            }
+        }
+        @media only screen and (max-width: 300px){
+            body{
+                background-color: blueviolet;
+            }
+            .container{
+                grid-template-areas:
+            'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+                gap: 1rem;
+            }
+            /* span{
+                display: block;
+                text-align: center;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item" id='navbar'>
+            <span>home</span>
+            <span>About</span>
+            <span>contact</span>
+            <span>services</span>
+            
+            
+        </nav>
+        <div class="item" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita illo earum.
+        </div>
+        <div class="item" id="aside">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem atque harum minima dicta, quasi dolorem
+            eius distinctio a numquam maiores laborum similique consequuntur ad! Velit possimus error dolor culpa nobis,
+            vitae, fugiat doloribus beatae porro, illum illo dolore alias explicabo. Nobis voluptate non atque.
+        </div>
+        <footer class='item' id="footer">Cpoyright 2023</footer>
+    </div>
+</body>
+
+</html>

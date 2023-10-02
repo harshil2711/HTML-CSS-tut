@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Media query</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+    .box{
+        text-align: center;
+        background-color: aquamarine;
+        display: none;
+    }
+    @media (max-width:400px){
+        #box1{
+            display: block;
+            color: white;
+            background-color :brown;
+        }
+    }
+    @media (min-width:400px) and (max-width:600px){
+        #box2 {
+            display:block ;
+            background-color: blue;
+            color: white;
+    }
+    }
+</style>
+    <body>
+<div class="box" id="box1">iPhone</div>
+<div class="box" id="box2">Tablet</div>
+<div class="box" id="box3">Desktop</div>
+<div class="box" id="box4">Wide desktop</div>
+    </body>
+</html>
